@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 
 	result := solve()
 
@@ -12,10 +12,10 @@ func main(){
 func solve() int {
 	max := 20
 
-	list := []int{11,13,14,16,17,18,19,20}
+	list := []int{11, 13, 14, 16, 17, 18, 19, 20}
 
-	for result := 20 ; result <= 1000000000 ; result = result + 20 {
-		for _,number := range list{
+	for result := 20; result <= 1000000000; result = result + 20 {
+		for _, number := range list {
 			if result%number != 0 {
 				break
 			}
