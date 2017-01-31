@@ -6,7 +6,7 @@ func main() {
 
 	result := solve()
 
-	fmt.Println("The difference between the sum of the squares of the first one hundred natural numbers and the square of the sum is equal to ", result)
+	fmt.Println("The 10 001st prime number is equal to ", result)
 }
 
 func solve() int {
