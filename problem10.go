@@ -20,13 +20,14 @@ func main() {
 		}
 	}
 
-	result := 0
+	var result uint64 = 0
 
 	for i := 2; i < len(list); i++ {
 		if list[i] {
-			result += i
+			result += uint64(i)
 		}
 	}
+
 
 	fmt.Println("The result is equal to ", result)
 }
