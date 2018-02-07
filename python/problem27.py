@@ -1,5 +1,7 @@
 def is_prime(n):
     i = 2
+    if n <= 1:
+        return False
     while i * i <= n:
         if n % i == 0:
             return False
@@ -24,7 +26,7 @@ for a in range(-1000, 1001):
             if is_prime(b):
                 tmp = 0
                 while True:
-                    if is_prime(n**2 + aa*n + bb):
+                    if is_prime(tmp**2 + a*tmp + b):
                         tmp += 1
                         continue
 
@@ -32,4 +34,5 @@ for a in range(-1000, 1001):
                         longest = (tmp, a, b)
                     break
 
+print(longest)
 print(longest[1]*longest[2])
